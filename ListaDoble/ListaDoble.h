@@ -25,6 +25,15 @@ typedef struct _ArbolBinario{
     int tam;
 }ArbolBinario;
 
+typedef struct _Rango{
+    int prioridad;
+    char descripcion[100];
+}Rango;
+
+typedef struct _Pasajero{
+    char nombre[50];
+    Rango *informacion;
+}Paasajero;
 
 void ImprimirNumeros(void *dato);
 void printfdatodeseado(void *dato);
